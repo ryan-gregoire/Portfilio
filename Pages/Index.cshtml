@@ -1,0 +1,41 @@
+﻿@page
+@model Name.Pages.Titles.TitleHeaderNames;
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="stylesheet" href="/css/site.css" />
+		<title>@Model.TitleHeaderMessage</title>
+	</head>
+
+	<body>
+
+		<header>
+			<div>
+				<a href="">@Model.headerTitle</a>
+			</div>
+
+			<nav>
+				<ul>
+					<li>
+						<a href="/About">About Me</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div>
+			<h2>@Model.PersonNameOFOwner</h2>
+			<p>@Model.job</p>
+		</div>
+
+		<footer>
+			<div>
+				<p>&copy; @Model.footerTitleName</p>
+			</div>
+		</footer>
+
+	</body>
+</html>
