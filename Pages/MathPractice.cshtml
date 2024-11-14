@@ -1,0 +1,123 @@
+﻿@page
+@model Name.Pages.Titles.TitleHeaderNames
+
+
+@functions {
+
+	public string getOperator()
+	{
+
+		List<string> op = new List<string>();
+		op.Add("+");
+		op.Add("-");
+		op.Add("*");
+		op.Add("/");
+
+		Random random = new Random();
+		int countRandom = random.Next(op.Count);
+
+		return op[countRandom];
+	}
+
+	public int Nums(int a, int b)
+	{
+		Random random = new Random();
+		return random.Next(a, b + 1);
+
+	}
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="~/css/MathPractice.css" />
+	<title>@Model.mathPracticeLabel</title>
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="/MathPractice">@Model.mathPracticeWelcome</a>
+		</div>
+
+		<nav>
+			<div>
+				<ul>
+					<li>
+						<a href="/index">Home</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div>
+			<h2>@Model.mathPracticeTitle</h2>
+		</div>
+
+
+		@{
+			string op = getOperator();
+			<h2>op: @op</h2>
+
+			@if (op.Equals("+"))
+			{
+
+				<div class="containerButtons">
+					<input id="addNum" type="text" placeholder="Enter Answer: "/>
+
+
+					<button>ADD</button>
+
+				</div>
+			}
+
+			@if (op.Equals("-"))
+			{
+				<div class="containerButtons">
+					<button>SUB</button>
+
+				</div>
+			}
+
+			@if (op.Equals("*"))
+			{
+
+				<div class="containerButtons">
+					<button>MUL</button>
+
+				</div>
+
+			}
+
+
+			@if (op.Equals("/"))
+			{
+
+				<div class="containerButtons">
+					<button>DIV</button>
+
+				</div>
+
+			}
+		}
+
+		<script>
+
+				
+			const input = document.getElementById("input");
+			const value = input.value;
+			const num1 = @Nums(1, 10);
+			const num2 = @Nums(1, 5);
+
+			const addNum = WebApplication3.wwwroot.MathsFunctions.AddNums(num1, num2);
+			
+			console.log(num1, num2)
+
+				
+		</script>
+	</main>
+</body>
+</html>

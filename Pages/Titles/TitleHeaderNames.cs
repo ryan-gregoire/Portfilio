@@ -12,6 +12,8 @@ namespace Name.Pages.Titles
         public string? aboutTitleHeader = "Ryan Gregoire Website | About";
         public string? footerTitleName = "2024 Ryan Gregoire | Websie";
 
-
+        public string? mathPracticeLabel = "Ryan Gregoire Website | Math Practice";
+        public string? mathPracticeWelcome = "Welcome to: | Math Practice";
+        public string? mathPracticeTitle = "Math Practice Application";
     }
 }

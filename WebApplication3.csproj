@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="MathsFunctions\DivNums.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="MathsFunctions\AddNums.cs" />
+    <Content Include="MathsFunctions\SubNums.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Pages\Home\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="MathsFunctions\DivNums.cs" />
   </ItemGroup>
 
 </Project>
