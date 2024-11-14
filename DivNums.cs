@@ -1,9 +1,9 @@
-﻿namespace WebApplication3.MathsFunctions
+﻿namespace MainDiv
 {
     public class DivNums
     {
 
-        public int DivNum(int a, int b)
+        public static int DivNum(int a, int b)
         {
             return a / b;  
         }

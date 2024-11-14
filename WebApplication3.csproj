@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="MathsFunctions\DivNums.cs" />
+    <None Include="DivNums.cs" />
   </ItemGroup>
 
 </Project>

@@ -7,38 +7,51 @@
 
 h3 {
     text-align: center;
-    position:relative;
+    position: relative;
     top: 190px;
-    letter-spacing: 4px;
+    /*    letter-spacing: 4px;*/
     font-weight: 100;
-    
+    font-size: 0px;
 }
 
 h2 {
+    display: grid;
     text-align: center;
     position: relative;
-    top: 150px;
-    letter-spacing: 4px;
+    font-size: 20px;
+
+    top: 250px;
+/*    letter-spacing: 4px;*/
     font-weight: 100;
+    margin: 0 auto;
 }
 
 .containerButtons {
     display: flex;
     justify-content:space-around;
     position: relative;
-    top: 280px
+    top: 320px;
 }
 
-.containerButtons button {
-   background: #101010;
-   padding: 10px;
-   border: none;
-   outline: none;
-   width: 200px;
-   color: white;
-   border-radius: 20px;
-}
+    .containerButtons button {
+        background: #101010;
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 400px;
+        color: white;
+        border-radius: 20px;
+    }
 
+
+input {
+    width: 450px;
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    position: relative;
+    top: 300px;
+}
 
 header {
     padding: 1.5rem;
@@ -84,9 +97,8 @@ header > div a {
 
     .containerButtons button {
         display: flex;
-        width: 120px;
+        width: 220px;
     }
-
 
 }
 
@@ -98,17 +110,20 @@ header > div a {
     body {
         background-color: blue;
     }
-    
+
+    input {
+        width: 450px;
+    }
+
+
     .containerButtons button {
         display: flex;
-        width: 120px;
+        width: 320px;
     }
 }
 
 @media screen and (min-width: 768px) {
-    h2 {
-        letter-spacing: 7px;
-    }
+    
 
     body {
         background-color: purple;
@@ -116,15 +131,21 @@ header > div a {
 
     .containerButtons button {
         display: flex;
+        width: 300px;
     }
+
+    input {
+        width: 450px;
+        font-size: 17px;
+        border: none;
+        outline: none;
+    }
+
+
 }
 
 
 @media screen and (min-width: 1024px) {
-    h2 {
-        /*        letter-spacing: 3px;*/
-        letter-spacing: 15px;
-    }
 
     body {
         background-color: #202020;
@@ -132,6 +153,14 @@ header > div a {
 
     .containerButtons button {
         display: flex;
+        width: 400px;
+    }
+
+    input {
+        width: 450px;
+        border: none;
+        /*        width: 300px;*/
+        outline: none;
     }
 }
 
